@@ -115,8 +115,9 @@ function Question({ category, type, difficulty, question, correct_answer, incorr
               {questionList.map((value) => {
                 return (
 
-                  <Button value={decode(value)} disabled={false} className='AnswerButton' key={decode(value)} onClick={(e) =>
-                    setSelectedAnswer(e.target.value)}>{'😑 '}{decode(value)}</Button>
+                  // <Button value={decode(value)} disabled={false} className='AnswerButton2' key={decode(value)} onClick={(e) =>
+                  //   setSelectedAnswer(e.target.value)}>{'😑 '}{decode(value)}</Button>
+                  <button className={'AnswerButton3'} value={decode(value)} key={decode(value)} onClick={(e) => setSelectedAnswer(e.target.value)}> {'😑 '}{decode(value)}</button>
 
                 )
               })}
@@ -152,13 +153,15 @@ function Question({ category, type, difficulty, question, correct_answer, incorr
               {questionList.map((value) => {
                 if (decode(value) === correct_answer) {
                   return (
-                    <Button value={decode(value)} className='AnswerButton' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'😊 '}{decode(value)}</Button>
+                    // <Button value={decode(value)} className='AnswerButton' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'😊 '}{decode(value)}</Button>
+                    <button value={decode(value)} className='AnswerButton4' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'😊 '}{decode(value)}</button>
                   );
                 } else {
                   return (
 
 
-                    <Button value={decode(value)} className='AnswerButton' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'🤢 '}{decode(value)}</Button>
+                    // <Button value={decode(value)} className='AnswerButton' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'🤢 '}{decode(value)}</Button>
+                    <button value={decode(value)} className='AnswerButton4' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'🤢 '}{decode(value)}</button>
 
                   )
                 }
@@ -166,7 +169,11 @@ function Question({ category, type, difficulty, question, correct_answer, incorr
             </div>
 
           </div>
-          <h3>You are correct</h3>
+          <h3 style={{
+            marginTop: 2,
+            color: 'green',
+            marginBottom: 10
+          }}>You are correct</h3>
         </WindowContent>
       </Window>
     );
@@ -188,21 +195,23 @@ function Question({ category, type, difficulty, question, correct_answer, incorr
         </WindowHeader>
         <WindowContent >
           <h2 style={{
-            marginBottom: 10
+            marginBottom: 10,
+
           }}>{decode(question)}</h2>
           <div>
             <div className='ButtonGroup'>
               {questionList.map((value) => {
                 if (decode(value) === correct_answer) {
                   return (
-                    <Button value={decode(value)} className='AnswerButton' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'😊 '}{decode(value)}</Button>
+                    // <Button value={decode(value)} className='AnswerButton' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'😊 '}{decode(value)}</Button>
+                    <button value={decode(value)} className='AnswerButton4' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'😊 '}{decode(value)}</button>
                   );
                 } else {
                   return (
 
 
-                    <Button value={decode(value)} className='AnswerButton' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'🤢 '}{decode(value)}</Button>
-
+                    // <Button value={decode(value)} className='AnswerButton' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'🤢 '}{decode(value)}</Button>
+                    <button value={decode(value)} className='AnswerButton4' disabled key={decode(value)} onClick={(e) => console.log(e.target.value)}>{'🤢 '}{decode(value)}</button>
                   )
                 }
 
@@ -210,7 +219,7 @@ function Question({ category, type, difficulty, question, correct_answer, incorr
             </div>
 
           </div>
-          <h3>You are incorrect</h3>
+          <h3 style={{ color: 'red', marginTop: 2, marginBottom: 10 }}>You are incorrect</h3>
         </WindowContent>
       </Window>
     );

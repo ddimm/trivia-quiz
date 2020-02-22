@@ -47,6 +47,105 @@
   text-align: center;
   min-height: 100% !important;
   position: relative;
+  padding: 10px 20%;
+}
+
+.AnswerButton3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-color:
+    #ced0cf;
+  color: #050608;
+  border-style: solid;
+  /* border-width: 2px; */
+  border-left-color:
+    #ffffff;
+  border-top-color:
+    #ffffff;
+  border-right-color:
+    #050608;
+  border-bottom-color:
+    #050608;
+  box-shadow: inset 1px 1px 0px 1px #dfe0e3, inset -1px -1px 0 1px #888c8f;
+  /* color:
+    #888c8f; */
+  text-shadow: 1px 1px #ffffff;
+}
+
+.AnswerButton4 {
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-color:
+    #ced0cf;
+  color: #050608;
+  border-style: solid;
+  /* border-width: 2px; */
+  border-left-color:
+    #ffffff;
+  border-top-color:
+    #ffffff;
+  border-right-color:
+    #050608;
+  border-bottom-color:
+    #050608;
+  box-shadow: inset 1px 1px 0px 1px #dfe0e3, inset -1px -1px 0 1px #888c8f;
+  color:
+    #888c8f;
+  text-shadow: 1px 1px #ffffff;
+}
+
+.AnswerButton2 {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color:
+    #ced0cf;
+  color: #050608;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color:
+    #ffffff;
+  border-top-color:
+    #ffffff;
+  border-right-color:
+    #050608;
+  border-bottom-color:
+    #050608;
+  box-shadow: inset 1px 1px 0px 1px #dfe0e3, inset -1px -1px 0 1px #888c8f;
+  color:
+    #888c8f;
+  text-shadow: 1px 1px #ffffff;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: fit-content;
+  width: auto;
+  padding: 0 0.5rem;
+  font-size: 16px;
+}
+
+.AnswerButton {
+  word-wrap: normal;
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  text-align: center;
+  min-height: 100% !important;
+  position: relative;
+  padding: 10px 20%;
 }
 
 
